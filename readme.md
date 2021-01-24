@@ -1,3 +1,3 @@
 # Loan Quote Generator
 ---
-*Generating LOANS*
+*Generating QUOTES*

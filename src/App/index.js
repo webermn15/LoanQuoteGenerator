@@ -12,10 +12,7 @@ function App() {
     function updateValues(buttonClick) {
         setHasLead(buttonClick);
         setHasClickedButton(true);
-        console.log(hasLead, hasClickedButton);
     }
-
-    const variable = hasLead ? 'True' : 'False';
 
     return(
         <div className="app">

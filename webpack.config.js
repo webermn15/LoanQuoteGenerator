@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = require('webpack');
+// const webpack = require('webpack');
 
 module.exports = (env, argv) => {
     const isProd = argv.mode === 'production';
@@ -18,8 +18,8 @@ module.exports = (env, argv) => {
             rules: [
                 { 
                     test: /\.(js|ts)x?$/, 
-                    use: ['babel-loader'],
-                    exclude: /node_modules/ 
+                    exclude: /node_modules/,
+                    use: ['babel-loader', 'eslint-loader']
                 },
                 {
                     test: /\.(scss|css)$/,
@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
                 }
             ]
         },
-        devtool: isDev ? 'cheap-module-source-map' : 'source-map',
+        devtool: isDev ? 'eval-cheap-module-source-map' : 'source-map',
         plugins: [
             // isDev && new webpack.HotModuleReplacementPlugin(),
         ].filter(Boolean),
