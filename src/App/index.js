@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { hot } from "react-hot-loader/root";
+
 import Intro from './Intro';
 import Credentials from './Credentials';
 import Form from './Form';
@@ -29,4 +31,4 @@ function App() {
     )
 }
 
-export default App;
+export default hot(App);

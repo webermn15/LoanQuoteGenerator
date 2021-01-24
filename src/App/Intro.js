@@ -4,7 +4,7 @@ function Intro(props) {
     console.log(props);
     return(
         <div className="intro-wrapper">
-            <h1>Do you have a Lead ID?</h1>
+            <h1>Do you have a Lead ID, brother??</h1>
             <button
                 onClick={() => props.onBtnClick(true)}
             >
